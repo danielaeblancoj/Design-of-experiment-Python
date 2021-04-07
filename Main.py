@@ -11,7 +11,12 @@ import time
 def execute_main():
     """
     Main function to execute the program.
-    Calls "user_input" function to receive the choice of the DOE user wants to build and to read the input CSV file with the ranges of the variables. Thereafter, it calls the "generate_DOE" function to generate the DOE matrix and a suitable filename corresponding to the user's DOE choice. Finally, it calls the "write_CSV" function to write the DOE matrix (a Pandas DataFrame object) into a CSV file on the disk, and prints a message indicating the filename.
+    Calls "user_input" function to receive the choice of the DOE user
+    wants to build and to read the input CSV file with the ranges of the variables.
+    Thereafter, it calls the "generate_DOE" function to generate the DOE matrix and a suitable
+    filename corresponding to the user's DOE choice. Finally, it calls the "write_CSV" function
+    to write the DOE matrix (a Pandas DataFrame object) into a CSV file on the disk, and prints
+    a message indicating the filename.
     """
     doe_choice, infile = user_input()
     df, filename = generate_DOE(doe_choice,infile)
